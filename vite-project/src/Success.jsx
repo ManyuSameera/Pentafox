@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import '@mantine/core/styles.css';
 import { Center, Input, MantineProvider } from '@mantine/core';
-
+import image from './assets/img.jpg'
 import { Card, Image, Text, Badge, Button, Group,Anchor } from '@mantine/core';
 import Store from './store';
 import Display from './display';
+import { Avatar } from '@mantine/core';
 import { IconX, IconCheck } from '@tabler/icons-react';
 import { Notification, rem } from '@mantine/core';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
@@ -104,6 +105,17 @@ function Success() {
   
   return (
     <MantineProvider>
+      <div className='nav'>
+        <img src={image} alt="not found"></img>
+        <div className='avatar'>
+        <Avatar variant="transparent" radius="xs" size="md" color="rgba(47,143,157,1)"  src="" />
+        </div>
+        <div className='logout'>
+        <Anchor href="#" onClick={handleLogout}>
+      Logout
+    </Anchor>
+        </div>
+      </div>
       <Center>
 
     
