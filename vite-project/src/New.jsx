@@ -33,11 +33,11 @@ function New() {
 
 function ChildComponent() {
   const count = useContext(CountContext);
-  console.log(import.meta.env);
+  console.log(import.meta.env.VITE_KEY);
   return (
     <div>
       <p>Count from Context: {count}</p>
-      <p>env: {JSON.stringify(import.meta.env.VITE_KEY)}</p>
+      <p>env: {(import.meta.env.VITE_KEY)}</p>
     </div>
   );
 }
