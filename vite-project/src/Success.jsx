@@ -111,7 +111,7 @@ function Success() {
         <Avatar variant="transparent" radius="xs" size="md" color="rgba(47,143,157,1)"  src="" />
         </div>
         <div className='logout'>
-        <Anchor href="#" onClick={handleLogout}>
+        <Anchor href="/" onClick={handleLogout}>
       Logout
     </Anchor>
         </div>
@@ -171,7 +171,7 @@ function Success() {
         <Center>
 
         <div className='component wrapper'>
-        <Anchor href="#" onClick={handleLogout}>
+        <Anchor href="/" onClick={handleLogout}>
       Logout
     </Anchor>
         </div>

@@ -4,6 +4,7 @@ import LoginForm from './LoginForm';
 import Success from './Success';
 import Display from './display';
 import New from './New';
+import Dashboard from './Dashboard';
 
 
 const App = () => {
@@ -16,10 +17,11 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={!isLoggedIn ? <LoginForm onLogin={handleLogin} /> : <Success />} />
+        <Route path="/" element={!isLoggedIn ? <LoginForm onLogin={handleLogin} /> : <Success />} />
         <Route path="/success" element={<Success/>}/>
-        <Route path="/display" element={<Display/>}/> */}
-        <Route path='/' element={<New/>}/>
+        <Route path="/display" element={<Display/>}/>
+        <Route path='/New' element={<New/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
       </Routes>
     </Router>
   );
